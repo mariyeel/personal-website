@@ -141,7 +141,7 @@
                                     <p class="text-sm font-extrabold uppercase tracking-[0.16em] text-[#7a6a25]">Senior High School</p>
                                     <h3>CARD-MRI Development Institute, Inc.</h3>
                                     <p>Completed Technical-Vocational-Livelihood (TVL) - ICT Programming with a strong focus on applied technology and software fundamentals.</p>
-                                    <div class="mt-4 inline-flex rounded-full bg-[#FFEE99] px-4 py-2 text-sm font-extrabold text-[#2F2F2F]">With High Honors / Soaring High Honors</div>
+                                    <div class="mt-4 inline-flex rounded-full bg-[#FFEE99] px-4 py-2 text-sm font-extrabold text-[#2F2F2F]">With High Honors</div>
                                 </article>
                             </div>
                         </div>
@@ -217,7 +217,6 @@
                     </div>
                     <div class="mx-auto mt-14 flex max-w-7xl flex-col gap-3 border-t border-white/10 pt-7 text-sm text-white/55 sm:flex-row sm:items-center sm:justify-between">
                         <p>&copy; {{ date('Y') }} Mariel Joyce. All rights reserved.</p>
-                        <p>Designed with #FFEE99 warmth and developer polish.</p>
                     </div>
                 </section>
             </main>
