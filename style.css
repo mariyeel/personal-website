@@ -5,3 +5,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
 .profile-grid-single{grid-template-columns:1fr}.contact-placeholder{max-width:100%;overflow-wrap:anywhere}.contact-placeholder a{font-size:clamp(16px,4vw,24px)}
+
+.portrait img{object-position:center 35%}.certificate-link{display:block;margin-top:20px;font-size:12px}.certificate-link img{display:block;width:100%;height:auto;border-radius:8px;margin-bottom:10px}
