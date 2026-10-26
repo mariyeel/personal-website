@@ -3,7 +3,7 @@
 A responsive portfolio for Mariel Joyce, an aspiring Software Developer / Full Stack Web Developer in the Philippines. Includes profile information, education, skills, projects, professional profiles, achievements, and leadership.
 
 **Author:** Mariel Joyce  
-**Live Vercel URL:** [Add your deployed website](https://YOUR-PROJECT.vercel.app)
+**Live Vercel URL:** https://personal-cv-mauve.vercel.app/
 
 ## Tech stack
 
