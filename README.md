@@ -98,3 +98,7 @@ Future pushes to the production branch trigger deployments; branches can receive
 - Confirm section navigation and project/profile links after inserting real URLs.
 - Enable reduced motion and verify comfortable navigation.
 - Confirm all personal details and project descriptions before publication.
+
+## Personal pictures
+
+Add pictures to a `pictures/` folder at the repository root. Change the hero image source in `index.html` from `assets/profile-placeholder.svg` to `pictures/YOUR-FILENAME.jpg` and update its alternative text. Match filename capitalization exactly. Commit the image and HTML together. The placeholder remains until a photo is selected.

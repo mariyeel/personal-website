@@ -1,5 +1,5 @@
 // Replace null URLs with your real public profile and project addresses.
-const profiles = { github: null, linkedin: null, facebook: null, instagram: null };
+const profiles = { github: 'https://github.com/mariyeel', facebook: 'https://www.facebook.com/mari.yeeel', instagram: 'https://www.instagram.com/mar._.yeeelll' };
 const skills = [
   ['Languages & frameworks', ['HTML', 'CSS', 'JavaScript', 'PHP', 'Dart', 'Flutter', 'Laravel']],
   ['Databases & cloud', ['PostgreSQL', 'Firebase Authentication', 'Firebase Realtime Database']],
@@ -18,14 +18,14 @@ function projectLink(url, label) {
 }
 document.querySelector('#project-list').innerHTML = projects.map((project, index) => `<article class="project"><div class="project-visual ${project.theme}" role="img" aria-label="Illustrative ${project.title} preview; replace with a real screenshot"><div class="mock-window"><div class="mock-bar"><i></i><i></i><i></i></div><div class="mock-content"><strong>${project.title === 'School Organization Management System' ? 'Organization hub' : project.title}</strong><p>${project.subtitle}</p>${project.mock}</div></div><span class="visual-label">CONCEPT PREVIEW · SCREENSHOT PLACEHOLDER</span></div><div><span class="project-index">PROJECT / 0${index + 1}</span><h3>${project.title}</h3><p>${project.description}</p><div class="chips">${project.tags.map(chip).join('')}</div><div class="project-links">${projectLink(project.github, 'GitHub')}${projectLink(project.demo, 'Live demo')}</div></div></article>`).join('');
 document.querySelector('#repo-links').innerHTML = projects.map(project => projectLink(project.github, project.title)).join('');
-const profileCards = document.querySelectorAll('.profile-card > .placeholder-link');
-['github', 'linkedin'].forEach((key, index) => {
-  if (!profiles[key]) return;
-  const link = profileCards[index];
-  link.href = profiles[key]; link.textContent = `${key === 'github' ? 'GitHub' : 'LinkedIn'} profile ↗`;
-  link.classList.remove('placeholder-link'); link.removeAttribute('aria-disabled');
-  link.target = '_blank'; link.rel = 'noopener noreferrer';
-});
+const githubLink = document.querySelector('.profile-card > .placeholder-link');
+githubLink.href = profiles.github;
+githubLink.textContent = 'GitHub profile ↗';
+githubLink.classList.remove('placeholder-link');
+githubLink.removeAttribute('aria-disabled');
+githubLink.target = '_blank';
+githubLink.rel = 'noopener noreferrer';
+
 document.querySelector('.socials').innerHTML = Object.entries(profiles).map(([name, url]) => url ? `<a href="${url}" target="_blank" rel="noopener noreferrer">${name} ↗</a>` : `<span>${name} · coming soon</span>`).join('');
 const menu = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
